@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.jpg" alt="Programming Tutor Agent — LangChain · MCP" width="100%" />
+  <img src="UD9Eh (2)" alt="Programming Tutor Agent — LangChain · MCP" width="100%" />
 </p>
 
 # AI Tutor Agent
