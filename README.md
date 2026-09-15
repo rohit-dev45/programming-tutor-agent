@@ -8,12 +8,15 @@ The agent answers coding questions. When a question needs a check
 
 ## Demo
 
-GitHub README pages do not play video inside the markdown. Open the file page and press play:
+**[Watch on Google Drive](https://drive.google.com/file/d/1X8HZTsvx9oTEdc2P6xVx4szGgzhltDgM/view?usp=sharing)**
 
-**[Play demo video](https://github.com/rohit-dev45/programming-tutor-agent/blob/main/docs/programming-tutor-agent/docs/demo.mp4)**
+Preview player:
+https://drive.google.com/file/d/1X8HZTsvx9oTEdc2P6xVx4szGgzhltDgM/preview
 
-Direct file:
-`docs/programming-tutor-agent/docs/demo.mp4`
+Also on GitHub:
+[demo.mp4](https://github.com/rohit-dev45/programming-tutor-agent/blob/main/docs/programming-tutor-agent/docs/demo.mp4)
+
+Set the Drive file to **Anyone with the link → Viewer** or visitors will hit Access denied.
 
 ![VS Code tutor project](docs/programming-tutor-agent/docs/screenshots/01-vscode-tutor.png)
 
