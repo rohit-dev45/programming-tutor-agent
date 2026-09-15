@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/banner.svg" alt="Programming Tutor Agent — LangChain · MCP" width="100%" />
+</p>
+
 # AI Tutor Agent
 
 Python programming tutor built with LangChain, Gemini, and MCP tools.
@@ -15,8 +19,6 @@ https://drive.google.com/file/d/1X8HZTsvx9oTEdc2P6xVx4szGgzhltDgM/preview
 
 Also on GitHub:
 [demo.mp4](https://github.com/rohit-dev45/programming-tutor-agent/blob/main/docs/programming-tutor-agent/docs/demo.mp4)
-
-Set the Drive file to **Anyone with the link → Viewer** or visitors will hit Access denied.
 
 ![VS Code tutor project](docs/programming-tutor-agent/docs/screenshots/01-vscode-tutor.png)
 
