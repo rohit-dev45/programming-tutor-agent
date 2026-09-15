@@ -8,7 +8,12 @@ The agent answers coding questions. When a question needs a check
 
 ## Demo
 
-[Watch the demo video](docs/programming-tutor-agent/docs/demo.mp4)
+GitHub README pages do not play video inside the markdown. Open the file page and press play:
+
+**[Play demo video](https://github.com/rohit-dev45/programming-tutor-agent/blob/main/docs/programming-tutor-agent/docs/demo.mp4)**
+
+Direct file:
+`docs/programming-tutor-agent/docs/demo.mp4`
 
 ![VS Code tutor project](docs/programming-tutor-agent/docs/screenshots/01-vscode-tutor.png)
 
