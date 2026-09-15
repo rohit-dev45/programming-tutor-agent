@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.svg" alt="Programming Tutor Agent — LangChain · MCP" width="100%" />
+  <img src="docs/banner.jpg" alt="Programming Tutor Agent — LangChain · MCP" width="100%" />
 </p>
 
 # AI Tutor Agent
@@ -78,9 +78,6 @@ npx @modelcontextprotocol/inspector python mcp_server.py
 ## Same tools from Codex / Cursor
 
 Use `mcp.json` so the client can call the programming-tutor server.
-
-- List the tools available from the programming-tutor MCP server
-- `check_leap_year` for `2005` → not a leap year
 
 ## MCP tools
 
