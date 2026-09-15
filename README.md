@@ -6,6 +6,31 @@ The agent answers coding questions. When a question needs a check
 (palindrome, prime, Fibonacci, GCD, and similar), it calls tools from
 `mcp_server.py` and then explains the result in plain language.
 
+## Demo
+
+Full walkthrough (VS Code + MCP Inspector + Codex calling the same 13 tools):
+
+[Watch demo video](docs/demo.mp4)
+
+![VS Code tutor project](docs/screenshots/01-vscode-tutor.png)
+
+![MCP Inspector tool list](docs/screenshots/02-mcp-inspector-tools.png)
+
+![check_prime in MCP Inspector](docs/screenshots/03-check-prime.png)
+
+![reverse_string in MCP Inspector](docs/screenshots/04-reverse-string.png)
+
+![Codex lists the 13 MCP tools](docs/screenshots/05-codex-list-tools.png)
+
+![Codex check_leap_year 2005](docs/screenshots/06-leap-year.png)
+
+What the demo shows:
+
+1. Project files in VS Code (`tutor_agent.py`, `mcp_server.py`)
+2. MCP Inspector connected to `Programming Tutor`
+3. Live tool runs: `check_prime(6)`, `reverse_string("hello")`, `sum_of_digits`
+4. Codex discovering all 13 tools and running `check_leap_year(2005)` → not a leap year
+
 ## Stack
 
 - LangChain `create_agent`
@@ -17,12 +42,15 @@ The agent answers coding questions. When a question needs a check
 
 ```
 programming-tutor-agent/
-  main.py              # single-turn chat
-  tutor_agent.py       # multi-turn tutor with tool traces
-  mcp_server.py        # MCP tools the agent can call
-  test_langgraph.py    # small LangGraph check
+  main.py
+  tutor_agent.py
+  mcp_server.py
+  test_langgraph.py
   requirements.txt
   .env.example
+  mcp.json
+  docs/demo.mp4
+  docs/screenshots/
 ```
 
 ## Setup
@@ -43,27 +71,10 @@ GOOGLE_API_KEY=your_key
 
 ## Run
 
-Single question:
-
 ```bash
 python main.py
-```
-
-Interactive tutor (type `quit` to stop):
-
-```bash
 python tutor_agent.py
-```
-
-LangGraph check:
-
-```bash
 python test_langgraph.py
-```
-
-Run the MCP server alone:
-
-```bash
 python mcp_server.py
 ```
 
@@ -73,13 +84,9 @@ python mcp_server.py
 npx @modelcontextprotocol/inspector python mcp_server.py
 ```
 
-Open the Inspector, go to **Tools**, then execute `check_prime`, `reverse_string`, `sum_of_digits`, or `check_leap_year`.
-
 ## Same tools from Codex / Cursor
 
-Use `mcp.json` in this folder so the client can call the programming-tutor server.
-
-Example prompts:
+Use `mcp.json` so the client can call the programming-tutor server.
 
 - List the tools available from the programming-tutor MCP server
 - `check_leap_year` for `2005` → not a leap year
