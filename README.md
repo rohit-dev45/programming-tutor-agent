@@ -8,28 +8,18 @@ The agent answers coding questions. When a question needs a check
 
 ## Demo
 
-Full walkthrough (VS Code + MCP Inspector + Codex calling the same 13 tools):
+The LinkedIn walkthrough covers:
 
-[Watch demo video](docs/demo.mp4)
-
-![VS Code tutor project](docs/screenshots/01-vscode-tutor.png)
-
-![MCP Inspector tool list](docs/screenshots/02-mcp-inspector-tools.png)
-
-![check_prime in MCP Inspector](docs/screenshots/03-check-prime.png)
-
-![reverse_string in MCP Inspector](docs/screenshots/04-reverse-string.png)
-
-![Codex lists the 13 MCP tools](docs/screenshots/05-codex-list-tools.png)
-
-![Codex check_leap_year 2005](docs/screenshots/06-leap-year.png)
-
-What the demo shows:
-
-1. Project files in VS Code (`tutor_agent.py`, `mcp_server.py`)
-2. MCP Inspector connected to `Programming Tutor`
+1. VS Code project (`tutor_agent.py`, `mcp_server.py`)
+2. MCP Inspector connected to **Programming Tutor**
 3. Live tool runs: `check_prime(6)`, `reverse_string("hello")`, `sum_of_digits`
-4. Codex discovering all 13 tools and running `check_leap_year(2005)` → not a leap year
+4. Codex listing all 13 tools and `check_leap_year(2005)` → not a leap year
+
+Add the video on GitHub (this connector cannot push binary files):
+
+1. Open https://github.com/rohit-dev45/programming-tutor-agent/upload/main/docs
+2. Drop `demo.mp4` so the path is `docs/demo.mp4`
+3. Optional: drop screenshots into `docs/screenshots/`
 
 ## Stack
 
@@ -37,21 +27,6 @@ What the demo shows:
 - Gemini (`gemini-2.5-flash`)
 - MCP server (`FastMCP`) over stdio
 - LangGraph smoke test in `test_langgraph.py`
-
-## Project layout
-
-```
-programming-tutor-agent/
-  main.py
-  tutor_agent.py
-  mcp_server.py
-  test_langgraph.py
-  requirements.txt
-  .env.example
-  mcp.json
-  docs/demo.mp4
-  docs/screenshots/
-```
 
 ## Setup
 
@@ -62,8 +37,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
 ```
-
-Put your Gemini key in `.env`:
 
 ```
 GOOGLE_API_KEY=your_key
@@ -106,11 +79,3 @@ Use `mcp.json` so the client can call the programming-tutor server.
 - `check_leap_year`
 - `count_vowels`
 - `check_anagram`
-
-## Example prompts
-
-- Is 153 an Armstrong number?
-- Check if "A man a plan a canal Panama" is a palindrome
-- What is Fibonacci(10)?
-- Explain list comprehensions in Python
-- Are listen and silent anagrams?
