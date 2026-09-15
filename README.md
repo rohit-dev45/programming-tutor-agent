@@ -8,18 +8,26 @@ The agent answers coding questions. When a question needs a check
 
 ## Demo
 
-The LinkedIn walkthrough covers:
+[Watch the demo video](docs/programming-tutor-agent/docs/demo.mp4)
 
-1. VS Code project (`tutor_agent.py`, `mcp_server.py`)
+![VS Code tutor project](docs/programming-tutor-agent/docs/screenshots/01-vscode-tutor.png)
+
+![MCP Inspector tool list](docs/programming-tutor-agent/docs/screenshots/02-mcp-inspector-tools.png)
+
+![check_prime in MCP Inspector](docs/programming-tutor-agent/docs/screenshots/03-check-prime.png)
+
+![reverse_string in MCP Inspector](docs/programming-tutor-agent/docs/screenshots/04-reverse-string.png)
+
+![Codex lists the 13 MCP tools](docs/programming-tutor-agent/docs/screenshots/05-codex-list-tools.png)
+
+![Codex check_leap_year 2005](docs/programming-tutor-agent/docs/screenshots/06-leap-year.png)
+
+What the demo shows:
+
+1. Project files in VS Code (`tutor_agent.py`, `mcp_server.py`)
 2. MCP Inspector connected to **Programming Tutor**
 3. Live tool runs: `check_prime(6)`, `reverse_string("hello")`, `sum_of_digits`
 4. Codex listing all 13 tools and `check_leap_year(2005)` → not a leap year
-
-Add the video on GitHub (this connector cannot push binary files):
-
-1. Open https://github.com/rohit-dev45/programming-tutor-agent/upload/main/docs
-2. Drop `demo.mp4` so the path is `docs/demo.mp4`
-3. Optional: drop screenshots into `docs/screenshots/`
 
 ## Stack
 
